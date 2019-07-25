@@ -10,17 +10,18 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	
+	private static Scene mainScene;
+
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/AplicacaoFuncao.fxml"));
-			
 			ScrollPane scrollPane = loader.load();
 
 		
 			scrollPane.setFitToHeight(true);
 			scrollPane.setFitToWidth(true);
 			
-			Scene mainScene = new Scene(scrollPane);
+			mainScene = new Scene(scrollPane);
 			
 			primaryStage.setScene(mainScene);
 			primaryStage.setTitle("ListCompre");
@@ -28,5 +29,14 @@ public class Main extends Application {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static Scene getMainScene() {
+		
+		return mainScene;
+	}
+
+	public static void main(String[] args) {
+		launch(args);
 	}
 }
