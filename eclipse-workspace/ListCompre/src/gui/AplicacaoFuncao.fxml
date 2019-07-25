@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <content>
+      <VBox prefHeight="261.0" prefWidth="441.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="NovaLista">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Alta Urgencia" />
+                        <MenuItem mnemonicParsing="false" text="Media Urgencia" />
+                        <MenuItem mnemonicParsing="false" text="Baixa Urgencia" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Listas">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Compras Casa" />
+                        <MenuItem mnemonicParsing="false" text="Compras Construção" />
+                        <MenuItem mnemonicParsing="false" text="Compras Vastuário" />
+                        <MenuItem mnemonicParsing="false" text="Compras Eletrônicos" />
+                        <MenuItem mnemonicParsing="false" text="Compras Outros" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="ListasCompartilhadas">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Casa" />
+                        <MenuItem mnemonicParsing="false" text="Churrasco" />
+                        <MenuItem mnemonicParsing="false" text="Outros" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
